@@ -16,39 +16,19 @@ namespace Odyn.MotivationJournal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            ItemTask task = new ItemTask()
+            {
+                Name = "Forest"
+            };
+
+            var t2 = task.Clone;
+            task.Name = "lanca2";
+
+            Console.WriteLine("hey");
+            Console.ReadLine();
+
         }
-
-    }
-
-
-    interface IItemTask
-    {
-
-    }
-
-    class ItemTask
-    {
-        string name;
-        string opis;
-        DateTime start;
-        DateTime end;
-        double points;
-        bool isTimeSensitive;
-
-        public ItemTask()
-        {
-
-            start = DateTime.Now;
-            end = start.AddDays(1);
-            isTimeSensitive = false;
-        }
-
-        public string Name { get => name; set => name = value; }
-        public string Opis { get => opis; set => opis = value; }
-        public DateTime Start { get => start; set => start = value; }
-        public DateTime End { get => end; set => end = value; }
-        public double Points { get => points; set => points = value; }
-        public bool IsTimeSensitive1 { get => isTimeSensitive; set => isTimeSensitive = value; }
     }
 }
 
