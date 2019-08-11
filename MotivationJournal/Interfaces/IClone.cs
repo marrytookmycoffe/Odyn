@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Odyn.MotivationJournal
 {
-interface IClone<T> where T : class
+    interface IClone<T> where T : class
     {
         T Clone { get; }
     }

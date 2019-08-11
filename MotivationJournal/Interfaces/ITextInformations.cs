@@ -2,7 +2,7 @@ using System;
 
 namespace Odyn.MotivationJournal
 {
-interface ITextInformations
+    public interface ITextInformations
     {
         string Name { get; set; }
         string Description { get; set; }

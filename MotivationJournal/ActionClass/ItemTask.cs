@@ -1,10 +1,11 @@
+using Odyn.MotivationJournal.BaseData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Odyn.MotivationJournal
+namespace Odyn.MotivationJournal.Action
 {
     class ItemTask :TextData, IItemTask, IClone<ItemTask>
     {
@@ -21,7 +22,7 @@ namespace Odyn.MotivationJournal
         }
         public ItemTask(string name) : this()
         {
-
+            this.name = name;
         }
 
         

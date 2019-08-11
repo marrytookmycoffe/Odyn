@@ -2,7 +2,7 @@
 
 namespace Odyn.MotivationJournal
 {
-    interface IItemTask : ITextInformations, ITimeInformations
+    public interface IItemTask : ITextInformations, ITimeInformations
     {    
         double Points { get; set; }
     }

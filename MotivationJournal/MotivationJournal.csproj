@@ -50,12 +50,14 @@
   <ItemGroup>
     <Compile Include="Interfaces\IClone.cs" />
     <Compile Include="Interfaces\IItemTask.cs" />
-    <Compile Include="ChalengeClass\ItemTask.cs" />
+    <Compile Include="ActionClass\ItemTask.cs" />
     <Compile Include="Interfaces\ITextInformations.cs" />
     <Compile Include="Interfaces\ITimeInformations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BaseDataClass\TextData.cs" />
+    <Compile Include="UserComunication\ConsoleControl.cs" />
+    <Compile Include="UserComunication\Engine.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,8 +81,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UserComunication\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

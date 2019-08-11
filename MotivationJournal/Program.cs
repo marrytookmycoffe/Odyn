@@ -1,3 +1,5 @@
+using Odyn.MotivationJournal.Action;
+using Odyn.MotivationJournal.UserComunication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,17 +19,8 @@ namespace Odyn.MotivationJournal
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            ItemTask task = new ItemTask()
-            {
-                Name = "Forest"
-            };
-
-            var t2 = task.Clone;
-            task.Name = "lanca2";
-
-            Console.WriteLine("hey");
-            Console.ReadLine();
-
+            Engine engine = new Engine();
+            engine.Run();
         }
     }
 }

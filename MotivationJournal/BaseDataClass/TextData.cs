@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Odyn.MotivationJournal
+namespace Odyn.MotivationJournal.BaseData
 {
-public class TextData
+    public class TextData
     {
         protected TextData()
         {

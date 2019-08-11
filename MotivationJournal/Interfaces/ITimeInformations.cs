@@ -2,7 +2,7 @@ using System;
 
 namespace Odyn.MotivationJournal
 {
-interface ITimeInformations
+    public interface ITimeInformations
     {
         bool IsTimeSensitive { get; set; }
         DateTime Start { get; set; }
